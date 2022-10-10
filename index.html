@@ -18,11 +18,11 @@
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
         <div class="rightMenu">
-            <a href="#" class="btn">Contact Us</a>
+          <a href="#" class="btn">Shop</a>
         </div>
       </nav>
     </header>
@@ -30,9 +30,28 @@
 
     <!-- **** Hero Section Start**** -->
     <section class="hero">
-        <h2>HERO SECTION</h2>
+      <div class="cta">
+        <model-viewer
+        src="assets/scene.gltf"
+        camera-controls
+        camera-orbit="-25deg 50deg"
+        disable-zoom
+        auto-rotate
+        shadow-intensity="1"
+        ></model-viewer>
+      </div>
+      <div class="heroDetail">
+        <h1>Awesome<br>Collections</h1>
+        <h2>2022</h2>
+        <p>Find your shoes from our various collection.<br>Here shoes are endless and profit is also endless</p>
+      </div>
     </section>
     <!-- **** Hero Section End ****  -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
     <script src="script/script.js"></script>
   </body>
 </html>
