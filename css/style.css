@@ -22,6 +22,10 @@ body {
 }
 
 /* ===== navbar style start ====== */
+
+header {
+    z-index: 9999;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,6 +52,42 @@ body {
     color: rgb(8, 56, 146);
 }
 
+.mainMenu a{
+    color: rgb(8, 56, 146);
+    font-weight: 500;
+    /* background-color: tomato; */
+    
+}
+
+.mainMenu ul li {
+    width: 8rem;
+    text-align: center;
+}
+
+.mainMenu a:hover{
+    background-color: tomato;
+    padding: 6px 14px;
+    color: white;
+    border-radius: 20px;
+}
+
+.mainMenu a:active {
+    background-color:lightblue;
+}
+
+.rightMenu .btn {
+    background-color: tomato;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: white;
+}
+
+.rightMenu .btn:hover {
+    background-color: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
 .hero {
     display: flex;
     justify-content: space-evenly;
@@ -64,26 +104,34 @@ body {
 }
 
 model-viewer {
-    margin: -100px 0;
+    /* margin: -100px 0; */
     overflow-x: hidden;
-    width: 700px;
-    height: 700px;
+    width: 32rem;
+    height: 32rem;
   }
+
+.heroDetail {
+    margin: auto;
+}
 
 .hero .heroDetail h1 {
     font-size: 5rem;
     text-align: start;
-    line-height: 1;
-    letter-spacing: -4px;
+    line-height: .9;
+    letter-spacing: -3px;
     color: rgb(8, 56, 146);
+    margin-bottom: 1rem;
 }
 
 .hero .heroDetail h2 {
     font-size: 4rem;
     text-align: start;
     line-height: 1;
-    letter-spacing: -4px;
-    color: tomato;
+    letter-spacing: .2rem;
+    color:transparent;
+    margin-bottom: 1rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: tomato;
 }
 
 .heroDetail p {
@@ -91,43 +139,29 @@ model-viewer {
     font-size: 1.3rem;
     font-weight: 500;
     text-align: start;
+    margin-bottom: 1rem;
 }
 
-.mainMenu ul li {
-    width: 8rem;
-    text-align: center;
+.heroDetail .btn {
+    display: block;
+    text-align: start;
+    margin-top: 3rem;
 }
 
-.mainMenu a{
-    color: rgb(8, 56, 146);
+.heroDetail .btn a{
+    background-color: tomato;
+    padding: 1rem 2.2rem;
+    color: white;
+    font-size: 1.2rem;
     font-weight: 500;
-    /* background-color: tomato; */
-    
+    letter-spacing: 2px;
+    border-radius: 30px;
 }
 
-.mainMenu a:hover{
-    background-color: tomato;
-    padding: 6px 14px;
-    color: white;
-    border-radius: 20px;
-}
 
-.mainMenu a:active {
-    background-color:lightblue;
-}
 
-.btn {
-    background-color: tomato;
-    padding: 6px 14px;
-    border-radius: 20px;
-    color: white;
-}
 
-.btn:hover {
-    background-color: transparent;
-    color: tomato;
-    border: 1px solid tomato;
-}
+
 
 
 
