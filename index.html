@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AriShoes - It's My Shoes</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c2e8cef579.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- **** Navbar Start **** -->
@@ -22,7 +26,12 @@
           </ul>
         </div>
         <div class="rightMenu">
-          <a href="#" class="btn">Contact Us</a>
+          <a href="#" class="btn"
+            >Contact Us
+            <span>
+              <i class="fa-solid fa-message"></i>
+            </span>
+          </a>
         </div>
       </nav>
     </header>
@@ -32,36 +41,70 @@
     <section class="hero">
       <div class="cta">
         <model-viewer
-        src="assets/scene.gltf"
-        camera-controls
-        camera-orbit="-25deg 50deg"
-        disable-zoom
-        auto-rotate
-        shadow-intensity="1"
+          src="assets/scene.gltf"
+          camera-controls
+          camera-orbit="-25deg 50deg"
+          disable-zoom
+          auto-rotate
+          shadow-intensity="1"
         ></model-viewer>
       </div>
       <div class="heroDetail">
-        <h1>Awesome Shoes<br>Collections</h1>
+        <h1>Awesome Shoes<br />Collections</h1>
         <h2>2022</h2>
-        <p>Find your shoes from our various collection. Here shoes are endless and profit is also endless</p>
-        <div class="btn"><a href="">Shop Now</a></div>
+        <p>
+          Find your shoes from our various collection. Here shoes are endless
+          and profit is also endless
+        </p>
+        <div class="btn">
+          <a href="#">
+            Shop Now
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </div>
       </div>
     </section>
     <!-- **** Hero Section End ****  -->
 
-    <!-- **** Hero Info Start **** -->
+    <!-- **** Hero Stat Start **** -->
     <section class="heroStats">
       <div class="stat Order">
-        <span>20K+</span><p>Order Complete</p>
+        <span>20K+</span>
+        <p>Order Complete</p>
       </div>
       <div class="stat Visitor">
-        <span>40K+</span><p>Regular Visitor</p>
+        <span>40K+</span>
+        <p>Regular Visitor</p>
       </div>
       <div class="stat Customer">
-        <span>19K+</span><p>Happy Customer</p>
+        <span>19K+</span>
+        <p>Happy Customer</p>
       </div>
     </section>
-    <!-- **** Hero Info End **** -->
+    <!-- **** Hero Stat End **** -->
+
+    <!-- **** Our Product Start **** -->
+    <section class="ourProducts">
+      <div class="wrapper">
+        <div class="card">
+          <div class="prodImage" id="product1">
+            <img src="assets/nike1.png" alt="Nike 1" />
+          </div>
+          <div class="prodDescription">
+            <div class="descHeader">
+              <h5>Title Product 1</h5>
+              <i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+            </div>
+            <div class="descDetail">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **** Our Product End **** -->
 
     <script
       type="module"
