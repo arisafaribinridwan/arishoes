@@ -205,7 +205,14 @@ model-viewer {
   margin: 4rem 0;
   padding: 1.5rem 0;
   background-color: tomato;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.ourProducts h2 {
+  margin: 2rem 3rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
 }
 
 .ourProducts .wrapper {
@@ -284,7 +291,76 @@ model-viewer {
 
 .prodDescription .descDetail p {
   font-size: 1.3rem;
+  font-family: 'Lora';
+  font-weight: 500;
+}
+
+/* ==== Our Product Style end ==== */
+
+/* ==== About Us Start ==== */
+
+section.aboutUs {
+  margin: 8rem 0;
+  padding: 1.5rem 0;
+}
+
+.aboutUs .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.aboutUs .aboutText {
+  width: 40%;
+}
+
+.aboutUs h2 {
+  margin: 2rem 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(8, 56, 146);
+}
+
+.aboutText .aboutDetail .air {
+  color: tomato;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.aboutText .aboutDetail .shoes {
+  color: rgb(8, 56, 146);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.aboutUs .aboutDetail {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem 3rem;
+  line-height: 1.2;
+}
+
+.aboutUs .aboutImage img {
+  width: 600px;
+  height: 600px;
 }
 
 
-/* ==== Our Product Style end ==== */
+/* ==== About Us End ==== */
+
+/* ==== Footer Start ==== */
+footer {
+  text-align: center;
+  background-color: tomato;
+  margin: 4rem 0;
+  padding: 1.5rem 0;
+  color: white;
+  border-radius: 10px;
+}
+
+footer h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+/* ==== Footer End ==== */
