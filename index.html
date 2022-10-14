@@ -84,20 +84,25 @@
     <!-- **** Hero Stat End **** -->
 
     <!-- **** Our Product Start **** -->
-    <section class="ourProducts">
+    <section class="ourProducts" id="ourProducts">
       <h2>Our Valuable Products</h2>
-      <div class="wrapper">
+      <div class="wrapper" id="wrapper">
         <div class="card">
           <div class="prodImage" id="product1">
             <img src="assets/nike1.png" alt="Nike 1" />
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Sport One</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle1">Nike Sport One</h5>
+              <a
+                onclick="getDetail(1)"
+                data-title="More Detail"
+                class="moreDetailBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
@@ -110,11 +115,16 @@
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Vulgar Two</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle2">Nike Vulgar Two</h5>
+              <a
+                onclick="getDetail(2)"
+                data-title="More Detail"
+                class="moreDetailBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
@@ -127,11 +137,16 @@
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Bluesky</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle3">Nike Bluesky</h5>
+              <a
+                onclick="getDetail(3)"
+                data-title="More Detail"
+                class="moreDetailBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
@@ -144,11 +159,16 @@
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Suede</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle4">Nike Suede</h5>
+              <a
+                onclick="getDetail(4)"
+                data-title="More Detail"
+                class="moreDetailBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
@@ -161,11 +181,16 @@
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Goals</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle5">Nike Goals</h5>
+              <a
+                onclick="getDetail(5)"
+                data-title="More Detail"
+                class="moreDetailBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
@@ -178,20 +203,44 @@
           </div>
           <div class="prodDescription">
             <div class="descHeader">
-              <h5>Nike Freedom</h5>
-              <a href="#" data-title="More Detail" class="moreDetailBtn"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+              <h5 id="prodTitle6">Nike Freedom</h5>
+              <a onclick="getDetail(6)" data-title="More Detail" class="openBtn"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i
+              ></a>
             </div>
             <div class="descDetail">
-              <p>
+              <p id="prodDesc6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <!-- **** Our Product End **** -->
+
+    <!-- **** Dialog Product Start -->
+
+    <div class="moreDetail" id="modal">
+      <div class="moreDetailwrapper">
+        <div class="moreDetailImage">
+          <img id="imageDialog" src="assets/nike1.png" alt="Product Image" />
+        </div>
+        <div class="moreDetailDesc">
+          <div>
+            <h5 id="titleDialog">Title Product</h5>
+            <p id="descDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <button class="closeBtn" onclick="closeDialog()">
+            <i class="fa-solid fa-circle-arrow-left"></i>Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- **** Dialog Product End -->
 
     <!-- **** About Start **** -->
 
@@ -200,12 +249,13 @@
         <div class="aboutText">
           <h2 class="aboutTitle">About Us</h2>
           <p class="aboutDetail">
-            <span class="air">AIR</span><span class="shoes">Shoes</span> is a world's class shoe company who focus on customer's need.
+            <span class="air">AIR</span><span class="shoes">Shoes</span> is a
+            world's class shoe company who focus on customer's need.
           </p>
         </div>
 
         <div class="aboutImage">
-          <img src="assets/nike1.png" alt="MVP Product">
+          <img src="assets/nike1.png" alt="MVP Product" />
         </div>
       </div>
     </section>

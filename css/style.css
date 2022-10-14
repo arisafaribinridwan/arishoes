@@ -297,6 +297,86 @@ model-viewer {
 
 /* ==== Our Product Style end ==== */
 
+/* ==== More Detail Style Start */
+
+#modal {
+  display: none;
+}
+
+.moreDetailwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreDetail .moreDetailImage {
+  background-color: tomato;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.moreDetail .moreDetailImage img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 0;
+  top: -50%;
+}
+
+.moreDetailDesc {
+  border: 1px solid tomato;
+  border-radius: 20px;
+  padding: 1rem 2rem 1rem 4rem;
+  margin: auto -2rem;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.moreDetailDesc h5 {
+  font-size: 3rem;
+  color: rgb(8, 56, 146);
+  text-align: center;
+}
+
+.moreDetailDesc p{
+  font-size: 1.5rem;
+  /* line-height: 1.2; */
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.moreDetailDesc button {
+  padding: 8px 16px;
+  background-color: tomato;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.moreDetailDesc i {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.moreDetailDesc button:hover {
+  background-color: transparent;
+  border: 1px solid tomato;
+  color: tomato;
+}
+
+
+
+
+
+
+/* ==== More Detail Style End */
+
+
 /* ==== About Us Start ==== */
 
 section.aboutUs {
@@ -345,7 +425,6 @@ section.aboutUs {
   width: 600px;
   height: 600px;
 }
-
 
 /* ==== About Us End ==== */
 
