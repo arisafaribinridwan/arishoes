@@ -17,21 +17,27 @@ li {
 }
 
 body {
-  width: 90%;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* ===== navbar style start ====== */
 
 header {
-  margin: 1rem;
+  /* margin: 1rem; */
+  width: 100%;
+  background-color: white;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 5px;
+  height: 100px;
+  padding: 0 2rem;
+
+}
+
+button.hamburger {
+  display: none;
 }
 
 .mainMenu ul {
@@ -109,6 +115,9 @@ header {
 .cta {
   display: flex;
   justify-content: center;
+  width: 32rem;
+  height: 32rem;
+  background-color: turquoise;
 }
 
 model-viewer {
@@ -116,6 +125,7 @@ model-viewer {
   overflow-x: hidden;
   width: 32rem;
   height: 32rem;
+  z-index: 0;
 }
 
 .heroDetail {
@@ -443,3 +453,58 @@ footer h5 {
   font-size: 1.2rem;
 }
 /* ==== Footer End ==== */
+
+
+/* Responsive Style Start */
+
+@media screen and (max-width:700px){
+  /* Navbar Start */
+
+  header {
+    z-index: 1;
+  }
+
+  button.hamburger {
+    display: flex;
+  }
+  
+  .mainMenu ul {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    height: 100vh;
+    width: 80%;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    background-color: tomato;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: all .5s ;
+  }
+
+  .mainMenu ul.is-active {
+    transform: translateX(0%);
+  }
+
+  .mainMenu a {
+    color: white;
+  }
+
+  .mainMenu a:hover {
+    background-color: white;
+    border: 1px solid tomato;
+    color: tomato;    
+  }
+
+  .rightMenu {
+    position: absolute;
+    right: 7rem;
+  }
+  /* Navbar End */
+
+}
+
+/* Responsive Style End */

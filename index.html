@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AriShoes - It's My Shoes</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
     <script
       src="https://kit.fontawesome.com/c2e8cef579.js"
       crossorigin="anonymous"
@@ -18,13 +19,15 @@
         <div class="brand">
           <p>AIR<span>Shoes</span></p>
         </div>
+
         <div class="mainMenu">
-          <ul>
+          <ul class="">
             <li><a href="">Home</a></li>
             <li><a href="">Products</a></li>
             <li><a href="">About</a></li>
           </ul>
         </div>
+
         <div class="rightMenu">
           <a href="#" class="btn"
             >Contact Us
@@ -33,6 +36,12 @@
             </span>
           </a>
         </div>
+
+        <button class="hamburger hamburger--slider" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </nav>
     </header>
     <!-- **** Navbar End **** -->
@@ -276,5 +285,6 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
     <script src="script/script.js"></script>
+    <script src="script/hamburger.js"></script>
   </body>
 </html>
