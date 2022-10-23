@@ -114,7 +114,7 @@ button.hamburger {
   justify-content: center;
   width: 32rem;
   height: 32rem;
-  background-color: turquoise;
+  /* background-color: turquoise; */
 }
 
 model-viewer {
@@ -467,6 +467,7 @@ footer h5 {
 
   .navbar {
     padding: 0 1rem;
+    position: relative;
   }
 
   button.hamburger {
@@ -530,12 +531,11 @@ footer h5 {
 
   .cta {
     width: 100%;
-    height: 358px;
+    height: 250px;
   }
   
   model-viewer {
-    height: 358px;
-    /* z-index: 0; */
+    height: 250px;
   }
 
   .hero .heroDetail h1 {
@@ -550,7 +550,7 @@ footer h5 {
   }
   
   .heroDetail p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -578,10 +578,46 @@ footer h5 {
   }
   
   .heroStats p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+/* Hero section end */
+
+/* Our Product Start */
+
+  .ourProducts {
+    margin: 0;
+  }
+
+  .ourProducts h2 {
+    margin: 1rem ;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: .5rem;
+    margin: 0 .5rem;
+    width: 300px;
+    height: 400px;
   }
   
-/* Hero section end */
+  .card img {
+    width: 300px;
+    height: 300px;
+    top: 100px;
+  }
+
+  .prodDescription .descHeader h5,
+  .prodDescription .descHeader i {
+    font-size: 1.5rem;
+  }
+   
+  .prodDescription .descDetail p {
+    font-size: 1.2rem;
+  }
+
+
+/* Our Product end */
 
 }
 
