@@ -12,11 +12,11 @@ function getDetail(nomor) {
     imageModal.src = "assets/nike" + nomor + ".png"
     titleModal.textContent = title.textContent
 
-    ourproduct.style.display = "none"
-    modal.style.display = "block"
+    // ourproduct.style.display = "none"
+    modal.classList.add("open")
 }
 
 function closeDialog() {
-    modal.style.display = "none"
-    ourproduct.style.display = "block"
+    modal.classList.remove("open")
+    // ourproduct.style.display = "block"
 }
