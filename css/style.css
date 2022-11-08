@@ -213,7 +213,9 @@ model-viewer {
   margin: 2rem 3rem;
   font-size: 2rem;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .ourProducts .wrapper {
@@ -350,24 +352,32 @@ model-viewer {
   margin: auto 0;
   height: 500px;
   width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   background-color: white;
 }
 
 .moreDetailDesc h5 {
   font-size: 3rem;
   color: rgb(8, 56, 146);
-  text-align: center;
 }
 
 .moreDetailDesc p {
   font-size: 1.5rem;
-  /* line-height: 1.2; */
   margin: 1rem 0;
+}
+
+.size {
+  border: 1px solid rgb(8, 56, 146);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 8px;
   text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .moreDetailDesc button {
